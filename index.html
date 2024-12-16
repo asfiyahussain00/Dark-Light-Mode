@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Mode Toggle</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+
+      
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+       
+        button {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+       
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+       
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body class="light-mode"> 
+    <div class="container">
+        <h1>Light and Dark Mode Toggle Button</h1>
+        <button id="btn">Switch to Dark Mode</button>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
